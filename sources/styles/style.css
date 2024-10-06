@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+/* взято с webtools */
+body {
+    font-family: Michroma, serif;
+    font-size: 18px;
+    background: linear-gradient(90deg, #680808 50%, #5e156c 100%);
+}
+
+.nav-link {
+    color: white;
+}
+.navbar-nav .nav-link.active {
+    color: rgb(233, 31, 31);
+}
+.navbar-brand>img {
+    width: 50px;
+    height: 40px;
+}
+.navbar-toggler {
+    background-color: brown;
+}
+/* тут я настраивал чтобы в независимости от текста кнопка была снизу */
+.card {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(270deg, #680808 30%, #6b1e78 100%);
+    color: lightblue;
+    /* снизу чтобы то что выходит за карточку не показывалось */
+    overflow: hidden;
+}
+.card>img {
+    width: 100%;
+    height: 300px;
+}
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-body .card-text {
+    padding-top:  10px;
+}
+/* обращаемся когда много классов так */
+.card-body .btn {
+    margin-top: auto;
+}
+.Text>p {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+.sidebar {
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(270deg, #680808 30%, #6b1e78 100%);
+    border: 2px solid rgb(95, 21, 21);
+}
+.card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+/* ввели ссылку на все в карточке теперь убираем подчеркивание и цвет */
+.card a {
+text-decoration: none;
+color: lightblue;
+}
+.card-title a {
+    color: white;
+}
+.footer-text {
+    color: white;
+    margin: auto auto;
+}
+footer {
+    background-color: rgba(26, 25, 25, 0.482);
+}
+.media-links {
+    /* джастифай горизонталь алайн второе */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.help-text {
+    color: white;
+    margin-top: 80px;
+}
+
+/* из веб тулсов настраиваем появление картинки */
+.call-anim {
+    animation: myAnim 2s ease 8s 5 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+   
+}
+.call-anim-pricing {
+    animation: myAnim2 5s ease 5s infinite normal forwards;
+}
+@keyframes myAnim2 {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(2);
+		transform-origin: 100% 50%;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+		transform-origin: 100% 50%;
+	}
+}
+.btn-outline-success {
+    color: rgb(184, 99, 39);
+}
+.btn-outline-success>a {
+text-decoration: none;
+color: #24b96f;
+}
+.telega {
+    margin-bottom: 50px;
+}
